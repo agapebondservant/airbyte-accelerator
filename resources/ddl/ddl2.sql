@@ -1,15 +1,6 @@
 /*
  */
 
-drop view cf_data;
-
-DROP TABLE public.prompt_templates;
-
-CREATE TABLE public.prompt_templates (
-	id serial NOT NULL,
-	"template" varchar NULL
-);
-
 /* 1. Prepare tables */
 CREATE OR REPLACE FUNCTION prepare_tables()
 RETURNS void
