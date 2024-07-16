@@ -1,2 +1,2 @@
 .env
-/openssl.conf
+dbt/

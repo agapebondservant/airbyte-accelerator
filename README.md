@@ -68,9 +68,14 @@ kubectl delete ns ${DATA_E2E_AIRBYTE_HELM_RELEASE_NAMESPACE}
 ### Integrate with dbt <a name="dbtintegrate"/>
 1. Install dbt on local workstation:
 ```
-
+pip install -r requirements.txt
 ```
-2. 
+2. Initialize a new dbt project **pgml_synthetic_data**:
+```
+cd dbt
+dbt init pgml_synthetic_data
+```
+3. 
 
 ### Integrate with TAP <a name="tapintegrate"/> (Work in progress)
 ```
